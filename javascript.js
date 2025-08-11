@@ -23,15 +23,11 @@ divMaker(squareContainer, 16);
 
 sizeButton.addEventListener("mousedown",() =>{
     sizeButton.className = "clicked"; 
-    let rect = sizeButton.getBoundingClientRect;
-    console.log(sizeButton.style.top);
-    sizeButton.style.top = rect.top - 8 + "px";
-    console.log(sizeButton.style.top);
+    
 });
 sizeButton.addEventListener("mouseup",() => {
     sizeButton.classList.remove("clicked");
-    let rect = sizeButton.getBoundingClientRect;
-    sizeButton.style.top = rect.top + 8 + "px";
+    
 });
 
 sizeButton.addEventListener("click", () => {
@@ -41,8 +37,11 @@ sizeButton.addEventListener("click", () => {
    while(promptNumber>100){
         promptNumber = window.prompt("nope, too much. under 100 please.");
    }
+      if(promptNumber != null){
 
    squareContainer.innerHTML ="";
    divMaker(squareContainer, promptNumber);
+      }
+   
 });
 
