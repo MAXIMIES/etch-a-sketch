@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#square-cont{
+    display: flex;
+    width: 1000px;
+    height: 1000px;
+    flex-flow: row wrap;
+    background-color: rgb(248, 185, 255);
+}
+
+.square{
+    
+    background-color: rgb(105, 167, 248);
+}
+
+.hover{
+    background-color: rgb(251, 251, 162);
+}
